@@ -25,6 +25,7 @@ git init -q
 
 # enable sparse checkouts, this will avoid checking out all the files in the repo
 git config core.sparseCheckout true
+rm Procfile
 echo "Procfile" > .git/info/sparse-checkout
 
 # add the repo as a remote and fetch the repo's history
